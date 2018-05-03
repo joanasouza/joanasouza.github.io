@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-hydeout"
-  spec.version       = "3.5.3"
-  spec.authors       = ["Joana Souza"]
-  spec.email         = ["souzajoana18@gmail.com"]
+  spec.version       = "3.5.0"
+  spec.authors       = ["Andrew Fong"]
+  spec.email         = ["id@andrewfong.com"]
 
-  spec.summary       = %q{my blog, my rules.}
-  spec.homepage      = "https://github.com/joanasouza"
+  spec.summary       = %q{The Hyde theme for Jekyll, refreshed.}
+  spec.homepage      = "https://github.com/fongandrew/hydeout"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-gist", "~> 1.4"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.6"
-  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "bundler", "~> 1.12"
 end
