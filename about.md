@@ -11,13 +11,22 @@ sidebar_link: true
 ### joana souza, 21 y/o 
 
 - from salvador, brazil
-- cs student
 - pyladies salvador co-organizer
 - shy and extroverted at the same time
-- always hungry, always eating
+- always hungry, not always eating
+
+### some things i know
+
+- html5, css, js, python, django, mpsbr, selenium webdriver, testlink
+
+### things that i'm interested in
+*but not necessarily i master something about it*
+
+- nlp
+- wearables *(specially led embroidery, crochet and arduino)*
+- zines 
+- studies in digital culture, education and society
 
 
-### links
-[github](https://github.com/joanasouza)
-[twitter](https://twitter.com/xuanaonline)
-[medium](https://medium.com/@itsjoanasouza)
+
+you can find me on [twitter](https://twitter.com/xuanaonline)!
