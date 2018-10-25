@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: xuana
-  avatar: /assets/img/octocat.png
+  avatar: octocat.png
   job: "desenvolvedora na thoughtworks"
   bio: "alguem do outro lado da tela"
   email:
