@@ -1,37 +1,71 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: xuana
+email:
+description: meu blog, minhas regras
+url: https://joanasouza.github.io/
+keywords: ["blog", "jekyll", "tech", "programming"]
 
-# Setup
-title:            xuana
-tagline:          ''
-description:      'my blog, my rules'
-url:              https://joanasouza.github.io/
-baseurl:          # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
-author:
-  name:           'Joana Souza'
-  url:            https://twitter.com/xuanaonline
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
-
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-# Custom vars
-version:            3.5.3
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-github:
-  repo:             https://github.com/joanasouza
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: xuana
+  avatar: /assets/img/octocat.png
+  job: "desenvolvedora na thoughtworks"
+  bio: "alguem do outro lado da tela"
+  email:
+  disqus-shortname:
+  twitter: xuanaonline
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: joanasouza
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
+  reddit: #username
+  telegram: #username

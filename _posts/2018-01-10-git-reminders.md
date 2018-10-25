@@ -27,8 +27,8 @@ git remote -v
 
 ```
 git remote add <your_remote_name> <your_repo_url> 
-git fetch origin
-git pull origin master
+git fetch <your_remote_name>
+git pull <your_remote_name> master
 ```
 ## <a id='change-url-remote'></a> changing a url to a existing remote repo
 

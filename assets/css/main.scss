@@ -1,10 +1,27 @@
 ---
-# Jekyll needs front matter for SCSS files
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "UTF-8";
 
-$sidebar-bg-color: #F64747;
-$link-color: #ff66a5;
-$sidebar-sticky: true;
-$layout-reverse: true !default;
-$root-font-family: 'Roboto Slab', serif !default;
-@import "hydeout";
+// Mixins
+@import "components/mixins";
+
+// Variables
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// Components
+@import "components/global";
+@import "components/helpers";
+@import "components/grid";
+@import "components/typography";
+@import "components/buttons";
+@import "components/syntax-highlighting";
+
+// Pages styling
+@import "pages/layout";
+@import "pages/tags";
+@import "pages/archive";
+@import "pages/post";
