@@ -2,10 +2,9 @@
 layout: post
 title: sai do casulo, menina
 categories: 
-  - journal
+  - off-topic
 tags:
   - pt-br
-  - off-topic
 ---
 <p class="message"><i>Disclaimer: Esse texto é um alô pra todas as minas que assim como eu se sentem perdidas, frustradas ou insatisfeitas com algum estágio da vida. Isso não é um manual, é mais um conjunto de pequenas dicas que extraí com base em algumas experiências minhas e conversas com amigos.</i></p>
 

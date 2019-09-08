@@ -1,27 +1,12 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
 ---
-@charset "UTF-8";
 
-// Mixins
-@import "components/mixins";
+$sidebar-bg-color: #9B26B6  !default;
+$layout-reverse: false !default;
+$font-family: 'Open Sans', sans-serif;
 
-// Variables
-@import "components/variables";
+@import "hydeout";
 
-// Reset
-@import "components/normalize";
 
-// Components
-@import "components/global";
-@import "components/helpers";
-@import "components/grid";
-@import "components/typography";
-@import "components/buttons";
-@import "components/syntax-highlighting";
-
-// Pages styling
-@import "pages/layout";
-@import "pages/tags";
-@import "pages/archive";
-@import "pages/post";
