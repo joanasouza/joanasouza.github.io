@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pensamentos: a essência de uma mulher negra
+title: pensamentos sobre a essência de uma mulher negra
 categories: 
   - off-topic
 tags:
