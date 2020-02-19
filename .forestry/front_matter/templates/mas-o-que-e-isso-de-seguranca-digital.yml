@@ -14,14 +14,10 @@ fields:
 - type: list
   name: tags
   label: tags
-- name: content
-  type: textarea
-  default: ''
+- name: image
+  type: file
   config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: content
+    maxSize: 250
+  label: image
 pages:
 - _posts/um-passo-de-cada-vez.md
