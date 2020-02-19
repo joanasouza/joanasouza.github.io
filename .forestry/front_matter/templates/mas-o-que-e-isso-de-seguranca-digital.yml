@@ -23,3 +23,5 @@ fields:
     schema:
       format: markdown
   label: content
+pages:
+- _posts/um-passo-de-cada-vez.md
