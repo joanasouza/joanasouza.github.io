@@ -8,11 +8,13 @@ tags:
 ---
 Semana passada me irritei e me irritei muito, a ponto de mandar longos áudios para minhas amigas e companheiras de coletiva. O motivo? #CiberativismoDeVitrine.
 
+
 Na terça-feira, 2 de Junho, aos adeptes à redes sociais, vimos nossos feeds lotados de imagens de fundo preto, textões e notas de repúdios, acompanhadas de algum tipo de hashtag(#) em prol do movimento negro.
 
 Como se já não bastasse todo cenário apocalíptico que estamos vivendo, assistimos em questão de 24h o esvaziamento das várias articulações da população negra brasileira e perda de narrativa nos espaços, sejam eles digitais ou não. Essa questão não é nova, e nem por isso deixa de ser incômoda. 
 
 Amanhecemos ao mês de Junho sob os gritos de uma branquitude surda, que precisava expor para Deus e o mundo o quão revoltadas e antirrascistas estavam/eram. A solidariedade branca transbordou de várias formas, além dos textos e postagens, houveram indicações de artistas e intelectuais negros, roleta de follows (ato de seguir várias contas em uma rede social de uma vez só), transmissão ao-vivo, vídeos, toda forma de mobilização possível para amparar tamanha dor que carregavam consigo.
+
 
 Pena que o desodorante venceu, e precisaram lavar a camisa do antirracismo às pressas, porque em uma sociedade capitalista e digital, as roupas não foram criadas para serem duráveis e muito menos repetidas durante uma longa sequência de dias, e numa pandemia isso não seria diferente. 
 
