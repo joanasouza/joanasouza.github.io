@@ -14,6 +14,7 @@ Na terça-feira, 2 de Junho, aos adeptes à redes sociais, vimos nossos feeds lo
 Como se já não bastasse todo cenário apocalíptico que estamos vivendo, assistimos em questão de 24h o esvaziamento das várias articulações da população negra brasileira e perda de narrativa nos espaços, sejam eles digitais ou não. Essa questão não é nova, e nem por isso deixa de ser incômoda. 
 
 Amanhecemos ao mês de Junho sob os gritos de uma branquitude surda, que precisava expor para Deus e o mundo o quão revoltadas e antirrascistas estavam/eram. A solidariedade branca transbordou de várias formas, além dos textos e postagens, houveram indicações de artistas e intelectuais negros, roleta de follows (ato de seguir várias contas em uma rede social de uma vez só), transmissão ao-vivo, vídeos, toda forma de mobilização possível para amparar tamanha dor que carregavam consigo.
+
 Pena que o desodorante venceu, e precisaram lavar a camisa do antirracismo às pressas, porque em uma sociedade capitalista e digital, as roupas não foram criadas para serem duráveis e muito menos repetidas durante uma longa sequência de dias, e numa pandemia isso não seria diferente. 
 
 Em 48 horas vimos de um tudo, em especial personalidades, marcas e coletivos agindo por meio de notas de repúdio. Ver essa atitude vinda de marcas e personalidades, não me surpreende tanto, já é esperado que eles se aproveitem de movimentos sociais para estratégias de marketing e propaganda. Agora, os coletivos, bem, esses podem até não me surpreender, porém me incomodam mais.
