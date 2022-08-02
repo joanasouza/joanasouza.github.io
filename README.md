@@ -1,168 +1,151 @@
-# Hydeout
+## moonwalk - a fast and minimalistic blog theme with clean dark mode
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/moonwalk.png" />
 
-![Desktop](/_screenshots/1.png?raw=true)
-<img alt="Mobile home page" src="/_screenshots/2.png?raw=true" width="300px" />
-<img alt="Mobile post page" src="/_screenshots/3.png?raw=true" width="300px" />
+<h3 align="center">
+  <img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/logo.png" width="24"/>
+<a href="https://abhinavs.github.io/moonwalk/">TRY THE DEMO</a>
+</h3>
 
-### Usage
+## Features
+* Light & dark mode with theme switcher
+* Vertical list, horizontal list, card list
+* Landing page with navbar, footer, portfolio
+* Fast (very minimal CSS) - 100/100 on performance, accessibility, best practices and SEO, please see [Lighthouse Report](https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/lighthouse-report.png) for more details
+* Responsive and mobile friendly
+* SEO optimized (uses [Jekyll Soopr SEO Tag](https://github.com/jekyll/jekyll-soopr-seo-tag))
+* RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
+* Easy to extend
+* Fully compatible with [GitHub Pages](https://pages.github.com/) (see [GitHub Pages installation](#github-pages-installation))
+* Auto-generated share images for social media (using [Soopr](https://www.soopr.co))
+* Share & like buttons (using [Soopr](https://www.soopr.co))
 
-Hydeout is available as the `jekyll-theme-hydeout` Ruby Gem.
-Add `gem "jekyll-theme-hydeout", "~> 3.4"` to your Gemfile and run
-`bundle install`.
 
-If you're installing on Github pages, you may also have to add
-`remote_theme: fongandrew/hydeout` to your `_config.yml`. [See the Github
-instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+#### Lighthouse
 
-Hydeout uses pagination, so if you have an `index.md`, you'll need to swap
-it with an `index.html` that uses the `index` layout:
+<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/lighthouse-report.png" />
 
+## Quick Installation
+1. [Fork this repository](https://github.com/abhinavs/moonwalk/fork).
+2. `cd moonwalk`
+3. `bin/bootstrap`
+4. [Optional] Sign up on Soopr, and add your `publish_token` in `_config.yml` file.
+
+If you are installing Moonwalk on Windows, please note that you might have to use Ruby 3.0.x instead of Ruby 3.1.x - you can see Windows specific installation instructions [here](https://github.com/abhinavs/moonwalk/blob/master/moonwalk_on_windows.md)
+
+## Starting Server
+`bin/start` - development server will start at http://127.0.0.1:4000
+
+## Deployment
+Moonwalk can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel. You can also use this button to do one click deploy
+<br />
+<br />
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abhinavs/moonwalk)
+
+If you want to use Moonwalk as a gem or use Github Pages, please see [this page](https://github.com/abhinavs/moonwalk/blob/master/github_pages.md)
+
+## Customizing
+
+You can edit `_config.yml` file to customize your blog. You can change things such as the name of the blog, the author, the appearance of the theme (light, dark or auto), how dates are formatted, etc. Customizable fields should be straightforward to understand. Still, `_config.yml` contains some comments to help you understand what each field does.
+
+For further customization (e.g. layout, CSS) see the [official Jekyll's documentation](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) on customizing gem-based themes.
+
+### Customize the menu
+
+In order to add/edit/delete entries in the home page, you can copy the `home.yml` file inside `_data` folder. Through that file you can define the structure of the menu and add data for navbar, footer, portfolio or simply remove all of that and use simple blog layout. Take a look at the default configuration to get an idea of how it works and read on for a more comprehensive explaination.
+
+The `home.yml` file accepts the following fields:
+
+1. Vertical list
+  - `entries` define a new unordered list that will contain menu entries
+  - each entry is marked by a `-` at the beginning of the line
+  - each entry has the following attributes:
+    - `title`, which defines the text to render for that menu entry
+    - `url`, which can either be a URL or `false`. If it is `false`, the entry will be rendered as plain text; otherwise the entry will be rendered as a link pointing to the specified URL. Note that the URL can either be relative or absolute.
+    - `post_list`, which can be `true` or `false`. If it is true, the entry will have all posts in the site as subentries. This is used to render your post list.
+    - `entries`, yes, you can have entries inside entries. In this way you can create nested sublists!
+2. Card list - cards are used to showcase portfolio projects. Please see `project_entries` in `_data/home.yml` file
+  - each entry is marked by a `-` at the beginning of the line
+  - each entry has the following attributes:
+    - `title` defines the header of the card
+    - `desc` is the body of the card
+    - `url` is a relative or absolute link which this card can point to.
+    - `highlight` in case you want to highlight something, keep the text short though
+3. Horizontal list - moonwalk uses horizontal lists to create navbar and footer. Please see `navbar_entries` and `footer_entries` in `data/home.yml` file
+  - each entry is marked by a `-` at the beginning of the line
+  - each entry has the following attributes:
+    - `title` defines the header of the card
+    - `url` is a relative or absolute link which this card can point to.
+
+
+### Pro tips
+1. Moonwalk has 3 in-built layouts:
+  - post - for content
+  - blog - for listing blog posts
+  - home - for landing page
+  you can change your `index.md` file to use either home or blog layout.
+
+2. It is extremely easy to tweak the color scheme. 
+  - for light mode, customize these css variables
+```css
+html {
+    --bg: #fff;
+    --bg-secondary: #f8f9fa;
+    --headings: #000;
+    --text: #333;
+    --links: blue;
+    --highlight: #ffecb2; // light yellow
+}
 ```
----
-layout: index
-title: Home
----
+  - for dark mode customize these css variables
+```css
+@mixin dark-appearance {
+  html, body  {
+      --bg: #1f242A;
+      --bg-secondary: #323945;
+      --headings: #3D9970;
+      --text: #adb5bd;
+      --links: #91a7ff;
+      --highlight: #ffd8a8;
+      --highlight: #ffd43b;
+  };
+}
 ```
+3. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
 
-You'll also need to add a setting to `_config.yml` telling Jekyll how many posts
-to include per page (e.g. `paginate: 5`).
+<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/twitter_card.png" />
 
-### Keep It Simple
+## Contributing
 
-In keeping with the original Hyde theme, Hydeout aims to keep the overall
-design lightweight and plugin-free. JavaScript is currently limited only
-to Disqus and Google Analytics (and is only loaded if you provide configuration
-variables).
+Bug reports and pull requests are welcome on GitHub at https://github.com/abhinavs/moonwalk.
 
-Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
+## Development
 
-### Customization
+To set up your environment to develop this theme, run `bundle install`.
 
-Hydeout replaces Hyde's class-based theming with the use
-of the following SASS variables:
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-```scss
-$sidebar-bg-color: #202020 !default;
-$sidebar-fg-color: white !default;
-$sidebar-sticky: true !default;
-$layout-reverse: false !default;
-$link-color: #268bd2 !default;
-```
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `moonwalk.gemspec` accordingly.
 
-To override these variables, create your own `assets/css/main.scss` file.
-Define your own variables, then import in Hydeout's SCSS, like so:
+## Acknowledgement
+This theme's original base is [no style please!](https://github.com/riggraz/no-style-please) theme created by  [Riccardo Graziosi](https://riggraz.dev/) - many thanks to him for creating a wonderful theme with nearly no css. 
 
-```scss
----
-# Jekyll needs front matter for SCSS files
----
+## License
 
-$sidebar-bg-color: #ac4142;
-$link-color: #ac4142;
-$sidebar-sticky: false;
-@import "hydeout";
-```
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-See the [_variables](_sass/hydeout/_variables.scss) file for other variables
-you can override.
+## Other Projects
+If you like Moonwalk, do check out my other projects
+*   [cookie](https://github.com/abhinavs/cookie) - a free landing website boilerplate using Jekyll and Tailwind CSS
+*   [scoop](https://github.com/abhinavs/scoop) - a Sinatra boilerplate project using Corneal, ActiveRecord, Capistrano, Puma & Nginx
+*   [soopr](https://www.soopr.co) - a tool that supports you in content marketing
+*   [apicagent](https://www.apicagent.com) - a FREE API that extracts device details from user-agent string
+*   [pincodr](https://pincodr.apiclabs.com) - a FREE API for Indian pincodes
+*   [humangous](https://www.humangous.co) - create public and private 'working with you' guides
+*   [blockr](https://www.abhinav.co/blockr) - a CLI tool to help you easily block and unblock websites
+*   [microrequests](https://www.abhinav.co/microrequests) - a Python library to help you consume microservice efficiently
 
-You can see the full set of partials you can replace in the
-[`_includes`](_includes) folder, but there are a few worth noting:
+✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter - [@abhinav](https://twitter.com/abhinav)
 
-* `_includes/copyright.html` - Insert your own copyright here.
-
-* `_includes/custom-head.html` - Insert custom head tags (e.g. to load your
-  own stylesheets)
-
-* `_includes/custom-foot.html` - Insert custom elements at the end of the
-  body (e.g. for custom JS)
-
-* `_includes/custom-nav-links.html` - Additional nav links to insert at the
-  end of the list of links in the sidebar.
-
-  Pro-tip: The `nav`s in the sidebar are flexboxes. Use the `order` property
-  to order your links.
-
-* `_includes/custom-icon-links.html`- Additional icon links to insert at the
-  end of the icon links at the bottom of the sidebar. You can use the `order`
-  property to re-order.
-
-* `_includes/favicons.html` - Replace references to `favicon.ico` and
-  `favicon.png` with your own favicons references.
-
-* `_includes/font-includes.html` - The Abril Fatface font used for the site
-  title is loaded here. If you're overriding that font in the CSS, be sure
-  to also remove the font load reference here.
-
-### New Features
-
-* Hydeout adds a new tags page (accessible in the sidebar). Just create a
-  new page with the tags layout:
-
-  ```
-  ---
-  layout: tags
-  title: Tags
-  ---
-  ```
-
-* Hydeout adds a new "category" layout for dedicated category pages.
-  Category pages are automatically added to the sidebar. All other pages
-  must have `sidebar_link: true` in their front matter to show up in
-  the sidebar. To create a category page, use the `category` layout"
-
-  ```
-  ---
-  layout: category
-  title: My Category
-  ---
-
-  Description of "My Category"
-  ```
-
-* You can control how pages are sorted by using the `sidebar_sort_order`
-  parameter in the front matter. This works for both category and non-category
-  pages, although non-category pages will always come first. Take a look at
-  [`_includes/sidebar-nav-links.html`](./_includes/sidebar-nav-links.html) if
-  you want to customize this behavior.
-
-  ```
-  ---
-  layout: page
-  title: My page
-  sidebar_sort_order: 123
-  ---
-
-  Some content.
-  ```
-
-* A simple redirect-to-Google search is available. Just create a page with
-  the `search` layout.
-
-  ```
-  ---
-  layout: search
-  title: Google Search
-  ---
-  ```
-
-* Disqus integration is ready out of the box. Just add the following to
-  your config file:
-
-  ```yaml
-  disqus:
-    shortname: my-disqus-shortname
-  ```
-
-  If you don't want Disqus or want to use something else, override
-  `comments.html`.
-
-* For Google Analytics support, define a `google_analytics` variable with
-  your property ID in your config file.
-
-There's also a bunch of minor tweaks and adjustments throughout the
-theme. Hope this works for you!
+✨⚡If you like my work, you can [buy me a coffee](https://buymeacoffee.com/abhinavs)                

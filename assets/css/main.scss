@@ -1,12 +1,6 @@
 ---
-# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
-# only main files contain this front matter, not partials.
 ---
 
-$sidebar-bg-color: #9B26B6  !default;
-$layout-reverse: false !default;
-$font-family: 'Open Sans', sans-serif;
-
-@import "hydeout";
-
-
+@import "moonwalk";
+@import "list";
+@import "syntax";
