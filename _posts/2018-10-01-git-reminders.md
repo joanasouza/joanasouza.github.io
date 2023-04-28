@@ -2,7 +2,7 @@
 layout: post
 title: Lembretes de Git
 author: xuana
-date: 2023-04-27T03:00:00.000Z
+date: 2018-10-10T03:00:00.000Z
 categories: git
 ---
 
