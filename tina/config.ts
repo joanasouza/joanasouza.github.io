@@ -12,7 +12,7 @@ export default defineConfig({
     outputFolder: "admin",
     publicFolder: "./",
   },
-  media: {
+  assets: {
     tina: {
       mediaRoot: "",
       publicFolder: "./",
@@ -23,7 +23,7 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "content/posts",
+        path: "_posts",
         fields: [
           {
             type: "string",
