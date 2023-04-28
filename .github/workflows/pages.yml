@@ -37,7 +37,7 @@ jobs:
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: yarn tinacms build && rm ./admin/.gitignore
+        run: yarn tinacms build 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
