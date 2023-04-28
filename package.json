@@ -13,4 +13,10 @@
     "@tinacms/cli": "^1.5.8",
     "tinacms": "^1.5.1"
   }
+   "scripts": {
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
+    "start": "tinacms build && next start"
+  }
 }
+
