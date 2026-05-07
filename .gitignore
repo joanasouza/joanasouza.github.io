@@ -1,8 +1,13 @@
-*.gem
-.bundle
-.jekyll-cache
-.sass-cache
 _site
 
+# HTML files
+**/index.html
+
+# Data files
+**/index.json
+
+# Other
 node_modules
-node_modules
+.DS_Store
+thumbs.db
+

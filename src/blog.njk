@@ -1,0 +1,47 @@
+---
+layout: base.njk
+lang: en
+title: Blog
+alternateUrl: /pt/blog/
+description: Blog — thoughts, experiments, and things Joana Santos learned
+permalink: /blog/
+---
+{% set t = i18n['en'] %}
+
+<div class="blog-header container">
+  <h1 class="blog-header__title">{{ t.blog.title }}</h1>
+  <p class="blog-count">
+    <span class="section__subtitle">{{ t.blog.subtitle }}</span>
+  </p>
+</div>
+
+<div class="container" style="padding-bottom: var(--space-3xl);">
+  {% if collections.posts.length %}
+  <div class="posts-grid">
+    {% for post in collections.posts %}
+    <a href="{{ post.url }}" class="post-card">
+      <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">
+        {{ post.date | readableDate }}
+      </time>
+      <h2 class="post-card__title">{{ post.data.title }}</h2>
+      {% if post.data.excerpt %}
+      <p class="post-card__excerpt">{{ post.data.excerpt }}</p>
+      {% endif %}
+      {% if post.data.tags %}
+      <div class="post-card__tags" aria-label="tags">
+        {% for tag in post.data.tags %}
+          {% if tag != 'posts' %}
+          <span class="tag">{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem; margin-top: var(--space-xl);">
+    No posts yet — coming soon.
+  </p>
+  {% endif %}
+</div>

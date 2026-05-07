@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>xuanaonline</title>
+  <subtitle>front-end developer and future designer</subtitle>
+  <link href="https://xuana.online/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://xuana.online" rel="alternate" type="text/html"/>
+  <updated>2018-10-10T00:00:00Z</updated>
+  <id>https://xuana.online/</id>
+  <author>
+    <name>Joana Santos</name>
+    <email>souzajoana18@gmail.com</email>
+  </author>
+  <entry>
+    <title>git reminders</title>
+    <link href="https://xuana.online/posts/2018-10-18-git-reminders/"/>
+    <updated>2018-10-10T00:00:00Z</updated>
+    <id>https://xuana.online/posts/2018-10-18-git-reminders/</id>
+    
+      
+      
+      <category term="git"/>
+    
+    <content type="html">Commands that I used to forget when learning git</content>
+    <summary type="html">Commands that I used to forget when learning git</summary>
+  </entry>
+  <entry>
+    <title>Quero aprender Python, mas qual o primeiro passo? Parte I</title>
+    <link href="https://xuana.online/posts/2017-05-06-quero-aprender-python-parte-1/"/>
+    <updated>2017-12-15T00:00:00Z</updated>
+    <id>https://xuana.online/posts/2017-05-06-quero-aprender-python-parte-1/</id>
+    
+      
+      
+      <category term="python"/>
+      <category term="pt-br"/>
+    
+    <content type="html">Dicas de como aprender a linguagem python</content>
+    <summary type="html">Dicas de como aprender a linguagem python</summary>
+  </entry>
+</feed>

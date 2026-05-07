@@ -1,0 +1,97 @@
+---
+layout: base.njk
+lang: en
+title: Home
+alternateUrl: /pt/
+description: Joana Santos — front-end developer and future designer
+---
+{% set t = i18n['en'] %}
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__eyebrow">{{ t.hero.eyebrow }}</p>
+      <h1 class="hero__title" id="hero-title">front-end developer<br>and future designer</h1>
+      <div class="hero__animation" aria-label="building with rotating words">
+        {{ t.hero.building }}
+        <span class="rotating-word" aria-live="polite" aria-atomic="true">creativity</span>
+      </div>
+      <div class="hero__social">
+        <a href="{{ site.instagram }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-link"
+           aria-label="Instagram (@xuanaonline)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="{{ site.linkedin }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-link"
+           aria-label="LinkedIn (joana-souza)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__deco" aria-hidden="true">
+    <div class="hero__deco-blob hero__deco-blob--1"></div>
+    <div class="hero__deco-blob hero__deco-blob--2"></div>
+    <span class="hero__deco-star hero__deco-star--1">★</span>
+    <span class="hero__deco-star hero__deco-star--2">✦</span>
+    <span class="hero__deco-star hero__deco-star--3">♥</span>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="recent-posts-heading">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title" id="recent-posts-heading">{{ t.sections.recentPosts }}</h2>
+      <p class="section__subtitle">{{ t.sections.recentPostsSubtitle }}</p>
+    </div>
+
+    {% if collections.posts.length %}
+    <div class="posts-grid">
+      {% for post in collections.posts | head(3) %}
+      <a href="{{ post.url }}" class="post-card">
+        <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">
+          {{ post.date | readableDate }}
+        </time>
+        <h3 class="post-card__title">{{ post.data.title }}</h3>
+        {% if post.data.excerpt %}
+        <p class="post-card__excerpt">{{ post.data.excerpt }}</p>
+        {% endif %}
+        {% if post.data.tags %}
+        <div class="post-card__tags" aria-label="tags">
+          {% for tag in post.data.tags %}
+            {% if tag != 'posts' %}
+            <span class="tag">{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+
+    <a href="/blog/" class="view-all">{{ t.sections.viewAll }} →</a>
+    {% else %}
+    <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem;">
+      No posts yet — coming soon.
+    </p>
+    {% endif %}
+  </div>
+</section>
