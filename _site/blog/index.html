@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog — thoughts, experiments, and things Joana Souza learned">
+  <title>Blog | xuanaonline</title>
+
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="xuanaonline RSS Feed" href="/feed.xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/trv0bzn.css">
+  <link rel="stylesheet" href="https://use.typekit.net/trv0bzn.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=neulis-cursive@400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <meta property="og:title" content="Blog | xuanaonline">
+  <meta property="og:description" content="Blog — thoughts, experiments, and things Joana Souza learned">
+  <meta property="og:url" content="https://xuana.online/blog/">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="/" class="site-logo" aria-label="xuanaonline — home">
+          <img src="/assets/images/favicon.svg" alt="" aria-hidden="true" width="28" height="28">
+          xuanaonline
+        </a>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul class="nav-menu" id="nav-menu" role="list">
+            
+            <li><a href="/">home</a></li>
+            <li><a href="/about/">about</a></li>
+            <li><a href="/blog/">blog</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="/pt/blog/"
+             class="btn-icon lang-toggle"
+             aria-label="Mudar para Português">
+            PT
+          </a>
+
+          <button class="btn-icon" id="theme-toggle" aria-label="switch to dark mode">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+
+          <button class="nav-toggle" id="nav-toggle"
+                  aria-expanded="false"
+                  aria-controls="nav-menu"
+                  aria-label="Menu">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+
+<div class="blog-header container">
+  <h1 class="blog-header__title">blog</h1>
+  <p class="blog-count">
+    <span class="section__subtitle">thoughts, experiments, and things i learned</span>
+  </p>
+</div>
+
+<div class="container" style="padding-bottom: var(--space-3xl);">
+  
+  <div class="posts-grid">
+    
+    <a href="/posts/2018-10-18-git-reminders/" class="post-card">
+      <time class="post-card__date" datetime="2018-10-10">
+        10 Oct 2018
+      </time>
+      <h2 class="post-card__title">git reminders</h2>
+      
+      <p class="post-card__excerpt">Commands that I used to forget when learning git</p>
+      
+      
+      <div class="post-card__tags" aria-label="tags">
+        
+          
+        
+          
+        
+          
+          <span class="tag">git</span>
+          
+        
+      </div>
+      
+    </a>
+    
+    <a href="/posts/2017-12-15-sai-casulo-menina/" class="post-card">
+      <time class="post-card__date" datetime="2017-12-15">
+        15 Dec 2017
+      </time>
+      <h2 class="post-card__title">sai do casulo, menina</h2>
+      
+      <p class="post-card__excerpt">um motivacional da xuana xovem</p>
+      
+      
+      <div class="post-card__tags" aria-label="tags">
+        
+          
+        
+          
+        
+          
+          <span class="tag">off-topic</span>
+          
+        
+          
+          <span class="tag">pt-br</span>
+          
+        
+      </div>
+      
+    </a>
+    
+    <a href="/posts/2017-05-06-quero-aprender-python-parte-1/" class="post-card">
+      <time class="post-card__date" datetime="2017-12-15">
+        15 Dec 2017
+      </time>
+      <h2 class="post-card__title">Quero aprender Python, mas qual o primeiro passo? Parte I</h2>
+      
+      <p class="post-card__excerpt">Dicas de como aprender a linguagem python</p>
+      
+      
+      <div class="post-card__tags" aria-label="tags">
+        
+          
+        
+          
+        
+          
+          <span class="tag">python</span>
+          
+        
+          
+          <span class="tag">pt-br</span>
+          
+        
+      </div>
+      
+    </a>
+    
+  </div>
+  
+</div>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        made with <span class="footer-heart" aria-label="love">♥</span> and procrastination
+      </p>
+      <ul class="footer-links" role="list">
+        <li><a href="/feed.xml">RSS</a></li>
+        <li><a href="https://instagram.com/xuanaonline" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://linkedin.com/in/joana-souza" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

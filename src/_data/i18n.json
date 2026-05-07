@@ -1,0 +1,98 @@
+{
+  "en": {
+    "nav": {
+      "home": "home",
+      "about": "about",
+      "blog": "blog"
+    },
+    "hero": {
+      "eyebrow": "hi, i'm joana",
+      "tagline": "front-end developer\nand future designer",
+      "building": "building with"
+    },
+    "sections": {
+      "recentPosts": "recent posts",
+      "recentPostsSubtitle": "thoughts, experiments, and things i learned",
+      "viewAll": "view all posts"
+    },
+    "blog": {
+      "title": "blog",
+      "subtitle": "thoughts, experiments, and things i learned",
+      "readMore": "read more",
+      "minRead": "min read"
+    },
+    "about": {
+      "bio1": "I'm Joana, a front-end developer based in Brazil with a passion for design, open knowledge, and technology as tools for change.",
+      "bio2": "I believe in the power of the internet as a democratic and creative space. My work lives at the intersection of code, design, and community.",
+      "bio3": "When I'm not building things on the web, you'll find me thinking about accessibility, visual communication, and how art intersects with activism.",
+      "interests": "interests & values",
+      "interestsList": [
+        "✦ creativity",
+        "♥ open knowledge",
+        "★ design systems",
+        "✦ accessibility",
+        "♥ activism",
+        "★ community building"
+      ]
+    },
+    "footer": {
+      "made": "made with",
+      "and": "and procrastination"
+    },
+    "theme": {
+      "toDark": "switch to dark mode",
+      "toLight": "switch to light mode"
+    },
+    "lang": {
+      "switchTo": "Mudar para Português"
+    }
+  },
+  "pt": {
+    "nav": {
+      "home": "início",
+      "about": "sobre",
+      "blog": "blog"
+    },
+    "hero": {
+      "eyebrow": "oi, eu sou a joana",
+      "tagline": "desenvolvedora front-end\ne futura designer",
+      "building": "construindo com"
+    },
+    "sections": {
+      "recentPosts": "posts recentes",
+      "recentPostsSubtitle": "pensamentos, experimentos e coisas que aprendi",
+      "viewAll": "ver todos os posts"
+    },
+    "blog": {
+      "title": "blog",
+      "subtitle": "pensamentos, experimentos e coisas que aprendi",
+      "readMore": "ler mais",
+      "minRead": "min de leitura"
+    },
+    "about": {
+      "bio1": "Sou a Joana, desenvolvedora front-end com paixão por design, conhecimento aberto e tecnologia como ferramentas de transformação.",
+      "bio2": "Acredito no poder da internet como espaço democrático e criativo. Meu trabalho vive na interseção entre código, design e comunidade.",
+      "bio3": "Quando não estou construindo coisas na web, estou pensando sobre acessibilidade, comunicação visual e como a arte se cruza com o ativismo.",
+      "interests": "interesses e valores",
+      "interestsList": [
+        "✦ criatividade",
+        "♥ conhecimento livre",
+        "★ sistemas de design",
+        "✦ acessibilidade",
+        "♥ ativismo",
+        "★ comunidade"
+      ]
+    },
+    "footer": {
+      "made": "feito com muito",
+      "and": "e procrastinação"
+    },
+    "theme": {
+      "toDark": "modo escuro",
+      "toLight": "modo claro"
+    },
+    "lang": {
+      "switchTo": "Switch to English"
+    }
+  }
+}
